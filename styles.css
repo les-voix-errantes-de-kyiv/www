@@ -39,36 +39,61 @@ main {
   flex-flow: column;
   min-height: 100svh;
   margin: 0 auto;
-  gap: 2rem;
+  gap: 3rem;
   max-width: 24rem;
   padding: 2rem 0.5rem;
 }
 
-h1 {
-  flex: 0;
-  color: var(--yellow);
+main > section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: 100%;
+  gap: 1rem;
 }
 
-ul {
+h1 {
+  font-size: 2rem;
+  color: var(--yellow);
+  text-align: center;
+}
+h2 {
+  font-size: 1.4rem;
+}
+
+#useful-links > ul {
+  display: flex;
   list-style: none;
   width: 100%;
-  display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-ul li {
+#stories-links > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  width: 100%;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+li,
+article {
   display: flex;
   background: var(--white);
   border-radius: 0.5rem;
   overflow: hidden;
   align-items: center;
 }
-ul li img {
+li img,
+article img {
   height: 100px;
   width: auto;
 }
-ul li a {
+li a,
+article a {
   color: var(--blue);
   padding: 1rem;
   width: 100%;
