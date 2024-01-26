@@ -60,9 +60,16 @@ ul {
 ul li {
   display: flex;
   background: var(--white);
-  padding: 1rem;
   border-radius: 0.5rem;
+  overflow: hidden;
+  align-items: center;
+}
+ul li img {
+  height: 100px;
+  width: auto;
 }
 ul li a {
   color: var(--blue);
+  padding: 1rem;
+  width: 100%;
 }
