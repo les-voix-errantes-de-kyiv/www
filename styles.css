@@ -91,6 +91,7 @@ li img,
 article img {
   height: 100px;
   width: auto;
+  flex-shrink: 0;
 }
 li a,
 article a {
