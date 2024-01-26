@@ -15,14 +15,14 @@
 
 :root {
   --blue: #023785;
-  --yellow: #fcc830;
+  --yellow: #fcd56c;
   --white: #ffffff;
 }
 
 * {
   margin: 0;
   padding: 0;
-  color: var(--yellow);
+  color: var(--white);
 }
 
 body {
@@ -37,15 +37,16 @@ main {
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  height: 100svh;
+  min-height: 100svh;
   margin: 0 auto;
   gap: 2rem;
   max-width: 24rem;
-  padding: 0.5rem;
+  padding: 2rem 0.5rem;
 }
 
 h1 {
   flex: 0;
+  color: var(--yellow);
 }
 
 ul {
@@ -58,7 +59,10 @@ ul {
 
 ul li {
   display: flex;
-  border: 1px solid var(--yellow);
+  background: var(--white);
   padding: 1rem;
   border-radius: 0.5rem;
+}
+ul li a {
+  color: var(--blue);
 }
